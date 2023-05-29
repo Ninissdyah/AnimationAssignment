@@ -1,17 +1,14 @@
 package com.example.animationassignment;
 
 import android.content.Context;
-import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.AttributeSet;
 import android.view.View;
 
 import androidx.annotation.Nullable;
 
-public class MyCanvass extends View {
+public class Canvas extends View {
 
     Paint paint;
     public boolean check = false;
@@ -21,11 +18,11 @@ public class MyCanvass extends View {
     public boolean down = false;
     float x, y;
 
-    public MyCanvass(Context context) {
+    public Canvas(Context context) {
         super(context);
     }
 
-    public MyCanvass(Context context, @Nullable AttributeSet attrs) {
+    public Canvas(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
     }
 
@@ -37,9 +34,8 @@ public class MyCanvass extends View {
     }
 
     @Override
-    protected void onDraw(Canvas canvas) {
+    protected void onDraw(android.graphics.Canvas canvas) {
         super.onDraw(canvas);
-        canvas.drawColor(Color.GREEN);
 
         if (check == false) {
 

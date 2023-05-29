@@ -8,14 +8,14 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    MyCanvass myCanvass;
+    Canvas myCanvass;
     Button left, right, up, down;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        myCanvass = (MyCanvass)findViewById(R.id.myview);
+        myCanvass = (Canvas)findViewById(R.id.myview);
         left = findViewById(R.id.left);
         right = findViewById(R.id.right);
         up = findViewById(R.id.up);
