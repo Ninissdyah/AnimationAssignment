@@ -1,14 +1,17 @@
 package com.example.animationassignment;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Context;
+import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.os.Bundle;
 import android.util.AttributeSet;
 import android.view.View;
 
-import androidx.annotation.Nullable;
-
-public class Canvas extends View {
+public class Canvasku extends View {
 
     Paint paint;
     public boolean check = false;
@@ -18,11 +21,12 @@ public class Canvas extends View {
     public boolean down = false;
     float x, y;
 
-    public Canvas(Context context) {
+
+    public Canvasku(Context context) {
         super(context);
     }
 
-    public Canvas(Context context, @Nullable AttributeSet attrs) {
+    public Canvasku(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
     }
 
@@ -34,9 +38,8 @@ public class Canvas extends View {
     }
 
     @Override
-    protected void onDraw(android.graphics.Canvas canvas) {
+    protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-
         if (check == false) {
 
             canvas.drawCircle(this.getWidth()/2, this.getHeight()/2, 100, paint);

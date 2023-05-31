@@ -2,20 +2,21 @@ package com.example.animationassignment;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Canvas;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Canvas myCanvass;
+    Canvasku myCanvass;
     Button left, right, up, down;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        myCanvass = (Canvas)findViewById(R.id.myview);
+        myCanvass = (Canvasku)findViewById(R.id.myview);
         left = findViewById(R.id.left);
         right = findViewById(R.id.right);
         up = findViewById(R.id.up);
